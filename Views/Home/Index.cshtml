@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using System.Configuration
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -119,7 +121,7 @@
                     <div class="card-body">
                         <p>The file is in JSON format. to get it you need to run</p>
                         <code>terraform plan -out examplefile.tfplan</code>
-                        </br>                      
+                        </br>
                         <code> terraform show -json examplefile.tfplan | Out-File myf.json <br /></code>
                         <br />
                         <p>Note :The example above was done using Powershell. replace Out-File if you are not using it <br /></p>
@@ -243,7 +245,8 @@
 
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0-rc
+                <b>Version</b> 3.1.0-rc  @ConfigurationManager.AppSettings["function_url"]
+
             </div>
             <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
         </footer>
@@ -297,12 +300,12 @@
         });
 
         var editor2 = CodeMirror.fromTextArea(document.getElementById("result"), {
-                matchBrackets: true,
-                autoCloseBrackets: true,
-                mode: "application/json",
-                lineWrapping: true,
-                theme: "monokai"
-            });
+            matchBrackets: true,
+            autoCloseBrackets: true,
+            mode: "application/json",
+            lineWrapping: true,
+            theme: "monokai"
+        });
 
         // BS-Stepper Init
         document.addEventListener('DOMContentLoaded', function () {
@@ -369,7 +372,7 @@
         // Hide the total progress bar when nothing's uploading anymore
         myDropzone.on("queuecomplete", function (progress) {
             document.querySelector("#total-progress").style.opacity = "0";
-         });
+        });
 
         // Setup the buttons for all transfers
         // The "add files" button doesn't need to be setup because the config
@@ -382,7 +385,7 @@
             editor.setValue("");
         };
 
-        // DropzoneJS Demo Code End
+            // DropzoneJS Demo Code End
     </script>
 
 </body>
