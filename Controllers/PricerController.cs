@@ -10,6 +10,8 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+
 
 namespace costEstimator.Controllers
 {
@@ -43,8 +45,8 @@ namespace costEstimator.Controllers
                 var parsedContentDisposition = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
                 var content = new StringContent(fileContent, Encoding.UTF8, "application/json");
                 HttpClient client = new HttpClient();
-                var url = "https://testfunction0010.azurewebsites.net/api/HttpTrigger1?code=tWIbfbDmOj4Zt9JiTjMZdxW6beJkWQMDWcRQkb4Wg6jw1jKzrGeFAQ==";
-                var response = await client.PostAsync(url, content);
+                string functionUrl = ConfigurationManager.AppSettings["function_url"];
+                var response = await client.PostAsync(functionUrl, content);
                 string result = await response.Content.ReadAsStringAsync();
                 var list = JsonConvert.DeserializeObject<List<PricerModel>>(result);
 
