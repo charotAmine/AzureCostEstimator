@@ -10,13 +10,18 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
+using Microsoft.Extensions.Configuration;
 
 
 namespace costEstimator.Controllers
 {
     public class PricerController : Controller
     {
+        private readonly IConfiguration configuration;
+        public PricerController(IConfiguration configuration)
+        {
+            this.configuration = configuration;
+        }
         // GET: PricerController
         public ActionResult Index()
         {
@@ -45,7 +50,7 @@ namespace costEstimator.Controllers
                 var parsedContentDisposition = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
                 var content = new StringContent(fileContent, Encoding.UTF8, "application/json");
                 HttpClient client = new HttpClient();
-                string functionUrl = ConfigurationManager.AppSettings["function_url"];
+                string functionUrl = configuration["function_url"];
                 var response = await client.PostAsync(functionUrl, content);
                 string result = await response.Content.ReadAsStringAsync();
                 var list = JsonConvert.DeserializeObject<List<PricerModel>>(result);
