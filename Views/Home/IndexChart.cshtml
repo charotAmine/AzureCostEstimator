@@ -205,191 +205,177 @@
                         <!-- /.card -->
                     </div>
                 </div>
-                <!-- Default box -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card card-outline card-info">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    JSON Display
-                                </h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body p-0">
-                                <textarea id="infra" class="p-3">
-                             </textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-->
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card card-outline card-info">
-                            <div class="card-header">
-                                <h3 class="card-title">
-                                    Result
-                                </h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body p-0">
-                                <textarea id="result" class="p-3">
-                             </textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-->
-                </div>
 
             </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div id="charts"class="row">
 
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0-rc
-            </div>
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-        </footer>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
-    </div>
-    <!-- ./wrapper -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Select2 -->
-    <script src="../../plugins/select2/js/select2.full.min.js"></script>
-    <!-- Bootstrap4 Duallistbox -->
-    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-    <!-- InputMask -->
-    <script src="../../plugins/moment/moment.min.js"></script>
-    <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
-    <!-- date-range-picker -->
-    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap color picker -->
-    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Bootstrap Switch -->
-    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-    <!-- BS-Stepper -->
-    <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
-    <!-- dropzonejs -->
-    <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <script src="../../plugins/codemirror/codemirror.js"></script>
-    <script src="../../plugins/codemirror/mode/javascript/javascript.js"></script>
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+                    </div>
+                    </div>
+                        </section>
+                            <!-- /.content -->
+                        </div>
+                        <!-- /.content-wrapper -->
 
-    <script>
-        $('#summernote').summernote();
-        var editor = CodeMirror.fromTextArea(document.getElementById("infra"), {
-            matchBrackets: true,
-            autoCloseBrackets: true,
-            mode: "application/json",
-            lineWrapping: true,
-            theme: "monokai"
-        });
+                        <footer class="main-footer">
+                            <div class="float-right d-none d-sm-block">
+                                <b>Version</b> 3.1.0-rc
+                            </div>
+                            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+                        </footer>
 
-        var editor2 = CodeMirror.fromTextArea(document.getElementById("result"), {
-            matchBrackets: true,
-            autoCloseBrackets: true,
-            mode: "application/json",
-            lineWrapping: true,
-            theme: "monokai"
-        });
+                        <!-- Control Sidebar -->
+                        <aside class="control-sidebar control-sidebar-dark">
+                            <!-- Control sidebar content goes here -->
+                        </aside>
+                        <!-- /.control-sidebar -->
+                    </div>
+                    <!-- ./wrapper -->
+                    <!-- jQuery -->
+                    <script src="../../plugins/jquery/jquery.min.js"></script>
+                    <!-- Bootstrap 4 -->
+                    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <!-- Select2 -->
+                    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+                    <!-- Bootstrap4 Duallistbox -->
+                    <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+                    <!-- InputMask -->
+                    <script src="../../plugins/moment/moment.min.js"></script>
+                    <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+                    <!-- date-range-picker -->
+                    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+                    <!-- bootstrap color picker -->
+                    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+                    <!-- Tempusdominus Bootstrap 4 -->
+                    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+                    <!-- Bootstrap Switch -->
+                    <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+                    <!-- BS-Stepper -->
+                    <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+                    <!-- dropzonejs -->
+                    <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+                    <!-- AdminLTE App -->
+                    <script src="../../dist/js/adminlte.min.js"></script>
+                    <!-- AdminLTE for demo purposes -->
+                    <script src="../../dist/js/demo.js"></script>
 
-        // BS-Stepper Init
-        document.addEventListener('DOMContentLoaded', function () {
-            window.stepper = new Stepper(document.querySelector('.bs-stepper'))
-        });
+                    <script src="../../plugins/chart.js/Chart.min.js"></script>
 
-        // DropzoneJS Demo Code Start
-        Dropzone.autoDiscover = false;
+                    <script>
 
-        // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
-        var previewNode = document.querySelector("#template");
-        previewNode.id = "";
-        var previewTemplate = previewNode.parentNode.innerHTML;
-        previewNode.parentNode.removeChild(previewNode);
+                        // BS-Stepper Init
+                        document.addEventListener('DOMContentLoaded', function () {
+                            window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+                        });
 
-        var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-            url: "Pricer/SaveUploadedFile", // Set the url
-            thumbnailWidth: 80,
-            thumbnailHeight: 80,
-            parallelUploads: 20,
-            previewTemplate: previewTemplate,
-            success: function (file, response) {
-                console.log(file);
-                console.log(response);
-                editor2.setValue(JSON.stringify(response.message, null, 2));
+                        // DropzoneJS Demo Code Start
+                        Dropzone.autoDiscover = false;
 
-            },
-            autoQueue: false, // Make sure the files aren't queued until manually added
-            previewsContainer: "#previews", // Define the container to display the previews
-            clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
-        });
+                        // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+                        var previewNode = document.querySelector("#template");
+                        previewNode.id = "";
+                        var previewTemplate = previewNode.parentNode.innerHTML;
+                        previewNode.parentNode.removeChild(previewNode);
 
-        myDropzone.on("addedfile", function (file) {
+                        var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+                            url: "../Pricer/SaveUploadedFile", // Set the url
+                            thumbnailWidth: 80,
+                            thumbnailHeight: 80,
+                            parallelUploads: 20,
+                            previewTemplate: previewTemplate,
+                            success: function (file, response) {
+                                console.log(file);
+                                console.log(response.message);
+                                response.message.forEach((item, index) => {
+                                    console.log("test_0")
+                                    var serviceType = item.serviceType
+                                    var serviceIndex = index
+                                    var serviceDetails = item.serviceDetails
+                                    var backgroundColor = ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de', '#A9A5FF', '#41243C', '#412724', '#0E1333','#88EE3E']
+                                    var operations = [];
+                                    var price = [];
+                                    var backgroundColorCopy = [];
+                                    var pricePer;
+                                    serviceDetails.forEach(function (item, index) {
+                                        pricePer = item.operation + "/" + item.perOperation
+                                        operations.push(pricePer);                                       
+                                        price.push(item.price)
+                                        backgroundColorCopy.push(backgroundColor[index])
+                                    });
+                                    var htmlChart = `<div class="col-md-4"> <div class="card card-danger"> <div class="card-header"> <h3 class="card-title">${serviceType}</h3> <div class="card-tools"> <button type="button" class="btn btn-tool" data-card-widget="collapse"> <i class="fas fa-minus"></i> </button> <button type="button" class="btn btn-tool" data-card-widget="remove"> <i class="fas fa-times"></i> </button> </div> </div> <div class="card-body"> <canvas id="donutChart_${serviceIndex}" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas> </div> </div ></div > `
+                                    $("#charts").append(htmlChart)
+                                    var donutChartCanvas = $(`#donutChart_${serviceIndex}`).get(0).getContext('2d')
+                                    var donutData = {
+                                        labels: operations,
+                                        datasets: [
+                                            {
+                                                data: price,
+                                                backgroundColor: backgroundColorCopy,
+                                            }
+                                        ]
+                                    }
+                                    var donutOptions = {
+                                        maintainAspectRatio: false,
+                                        responsive: true,
+                                    }
+                                    //Create pie or douhnut chart
+                                    // You can switch between pie and douhnut using the method below.
+                                    var donutChart = new Chart(donutChartCanvas, {
+                                        type: 'doughnut',
+                                        data: donutData,
+                                        options: donutOptions
+                                    })
+                                })
+                                //editor2.setValue(JSON.stringify(response.message, null, 2));
 
-            if (myDropzone.files.length > 1) {
-                myDropzone.removeAllFiles()
-                editor.setValue("");
-                myDropzone.addFile(file);
-            }
+                            },
+                            autoQueue: false, // Make sure the files aren't queued until manually added
+                            previewsContainer: "#previews", // Define the container to display the previews
+                            clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+                        });
 
-            // Hookup the start button
-            var reader = new FileReader();
-            reader.addEventListener("loadend", function (event) {
-                editor.setValue(JSON.stringify(JSON.parse(event.target.result), null, 2));
-            });
-            reader.readAsText(file)
-            console.log(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-            file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file); };
+                        myDropzone.on("addedfile", function (file) {
 
-        });
+                            if (myDropzone.files.length > 1) {
+                                myDropzone.removeAllFiles()
+                                myDropzone.addFile(file);
+                            }
 
-        // Update the total progress bar
-        myDropzone.on("totaluploadprogress", function (progress) {
-            document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
-        });
+                            file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file); };
 
-        myDropzone.on("sending", function (file) {
-            // Show the total progress bar when upload starts
-            document.querySelector("#total-progress").style.opacity = "1";
-            // And disable the start button
-            file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
-        });
+                        });
 
-        // Hide the total progress bar when nothing's uploading anymore
-        myDropzone.on("queuecomplete", function (progress) {
-            document.querySelector("#total-progress").style.opacity = "0";
-        });
+                        // Update the total progress bar
+                        myDropzone.on("totaluploadprogress", function (progress) {
+                            document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
+                        });
 
-        // Setup the buttons for all transfers
-        // The "add files" button doesn't need to be setup because the config
-        // `clickable` has already been specified.
-        document.querySelector("#actions .start").onclick = function () {
-            myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-        };
-        document.querySelector("#actions .cancel").onclick = function () {
-            myDropzone.removeAllFiles(true);
-            editor.setValue("");
-        };
+                        myDropzone.on("sending", function (file) {
+                            // Show the total progress bar when upload starts
+                            document.querySelector("#total-progress").style.opacity = "1";
+                            // And disable the start button
+                            file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
+                        });
 
-            // DropzoneJS Demo Code End
-    </script>
+                        // Hide the total progress bar when nothing's uploading anymore
+                        myDropzone.on("queuecomplete", function (progress) {
+                            document.querySelector("#total-progress").style.opacity = "0";
+                        });
+
+                        // Setup the buttons for all transfers
+                        // The "add files" button doesn't need to be setup because the config
+                        // `clickable` has already been specified.
+                        document.querySelector("#actions .start").onclick = function () {
+                            myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+                        };
+                        document.querySelector("#actions .cancel").onclick = function () {
+                            myDropzone.removeAllFiles(true);
+                        };
+                       
+
+                    </script>
 
 </body>
 </html>

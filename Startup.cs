@@ -52,6 +52,9 @@ namespace costEstimator
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
+                    name: "indexChart",
+                    pattern: "{controller=Home}/{action=IndexChart}/{id?}");
+                endpoints.MapControllerRoute(
                     name: "documentation",
                     pattern: "{controller=Static}/{action=Documentation}/{id?}");
             });

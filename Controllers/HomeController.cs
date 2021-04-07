@@ -22,6 +22,10 @@ namespace costEstimator.Controllers
         {
             return View();
         }
+        public IActionResult IndexChart()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
