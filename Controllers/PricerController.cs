@@ -50,7 +50,7 @@ namespace costEstimator.Controllers
                 var parsedContentDisposition = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
                 var content = new StringContent(fileContent, Encoding.UTF8, "application/json");
                 HttpClient client = new HttpClient();
-                string functionUrl = "https://azurecostestimator-back.azurewebsites.net/api/azurecostestimator-general?code=05Vfvhpm/PMT0rqzawHaWHvl3Lt8jA7DdlrpcTRVsSmvqTuAHww2kw==";
+                string functionUrl = configuration["function_url"];
                 var response = await client.PostAsync(functionUrl, content);
                 string result = await response.Content.ReadAsStringAsync();
                 var list = JsonConvert.DeserializeObject<List<PricerModel>>(result);
